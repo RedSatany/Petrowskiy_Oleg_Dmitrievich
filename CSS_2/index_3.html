@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards</title>
+
+        <style>
+            
+            .nav{
+                width: 15em;
+                background-color: lightgrey;
+                float: left;
+            }
+
+            .wrap{
+                background-color: rgb(243, 243, 243);
+            }
+
+            .news{
+                background-color: grey;
+                margin-bottom: .2em;
+                overflow: hidden;
+            }
+
+            .footer{
+                background-color: lightgrey;
+                margin-top: -12px;
+            }
+
+            .clear{
+                clear: both;
+                margin-top: -.2em;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="nav">
+                <h4>Блок навигации</h4>
+
+                <ul>
+                 <li>
+                      Ширина 15em
+                  </li>
+                  <li>
+                      Должен присутствовать цвет фона
+                  </li>
+                    <li>
+                        Располагается слева
+                 </li>
+                 <li>
+                     Блок навигации наполните контентом досточным, чтобы по высоте он начинал захватывать вторую статью, как показано в данном примере
+                 </li>
+             </ul>
+            </div>
+         <div class="news">
+                <h4>Статья 1</h4>
+            
+               <p>Размер блока:<br>
+                   Занимает всю доступную ширину<br>
+                  Должен присутствовать цвет фона<br>
+                  Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-<br>
+                  bottom
+              </p>
+         </div>
+         <div class="news">
+               <h4>Статья 2</h4>
+
+              <p>Размер блока:<br>
+                   Занимает всю доступную ширину<br>
+                   Должен присутствовать цвет фона<br>
+                  Во всех "статьях" сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-<br>
+                  bottom. Картинка вставлена при помощи тега, плавание организрвано по правому краю внутри<br>
+                 данной статьи для этой картинки.
+                 <img src="mail.png" alt="mail" style="float: right;">
+          </div>
+          <div class="clear"></div>
+         </div>
+         <div class="footer">
+            <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещенным внутрь контентом</p>
+         </div>
+    </body>
+</html>
