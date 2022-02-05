@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8" >
+    <head>
+        <title>JQuery</title>
+
+        <style>
+            table{
+                caption-side: bottom;
+            }
+            tr > th{
+                background-color: grey;
+            }
+            tr > td{
+               border-bottom: dotted grey 2px;
+            }
+            tr > td{
+                border-left: dotted grey 2px;
+            }
+            tr > td:nth-child(1){
+                font-weight: bold;
+                border-left: none;
+            }
+            tbody tr:nth-child(odd){
+                background-color: lightgrey;
+            }
+
+            tbody tr:hover{
+                background-color: lightskyblue;
+                cursor: pointer;
+            }
+        </style>
+
+    </head>
+    <body>
+        <table id="tabl">
+            <tr>
+                <th>
+                    ФИО
+                </th>
+                <th>
+                    пол
+                </th>
+                <th>
+                    должность
+                </th>
+                <th>
+                    дата рож.
+                </th>
+                <th>
+                    Данные 01
+                </th>
+                <th>
+                    Данные 02
+                </th>
+            </tr>
+            <tr id="tr1">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="tr2">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="tr3">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="tr4">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <tr id="tr5">
+                <td>Иванов Иван Иванович</td>
+                <td>М</td>
+                <td>начальник</td>
+                <td>01.01.1960</td>
+                <td>4567</td>
+                <td>3453</td>
+            </tr>
+            <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+        </table>
+
+        <button id="btn" style="background-color: steelblue; color: white;">Нечего показывать</button>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+        <script>
+        
+        $('#tabl tr:gt(0)').click(function(){
+            $(this).hide();
+            $('#btn').text('Показать скрытые строки');
+        })
+
+        $('#btn').click(function(){
+            $('#tabl tr:gt(0)').show();
+            $(this).text('Нечего показывать');
+        })
+
+        </script>
+
+
+    </body>
+</html>

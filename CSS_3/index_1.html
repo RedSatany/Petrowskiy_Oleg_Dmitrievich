@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8" >
+    <head>
+        <title>CSS3</title>
+
+        <style>
+            div.Menu_1{
+                width: 650px;
+            }
+            div.Menu_2{
+                width: 100px;
+                display: none;
+            }
+            div.Menu_2 > div{
+                text-align: center;
+                border: solid black 1px;
+                background-color: lightgrey;
+                color: grey;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            div.Menu_2 > div:hover{
+                background-color: grey;
+                color: lightgrey;
+            }
+            div.Menu_1 > div{
+                text-align: center;
+                width: 100px;
+                border: solid black 1px;
+                background-color: lightgrey;
+                color: grey;
+                border-radius: 5px;
+                position: relative;
+                cursor: pointer;
+                float: left;
+            }
+            div.Menu_1 > div:hover{
+                background-color: grey;
+                color: lightgrey;
+            }
+            div.Menu_1 > div:hover div.Menu_2{
+                display: block; 
+                position: absolute;
+                top: 105%;
+            }
+
+        @media screen and (max-width: 620px) { 
+                
+                div.Menu_1{
+                width: 100px;
+            }
+                
+                div.Menu_1 > div{
+                float: none;
+            }
+            div.Menu_1 > div:hover div.Menu_2{
+                position: absolute;
+                left: 100%;
+                top: 0%;
+            }
+        }
+        </style>
+
+    </head>
+    <body>
+        <div class="Menu_1">
+            <div>
+                Понедельник
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div>
+                Вторник
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div>
+                Среда
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div>
+                Четверг
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div>
+                Пятница
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+            <div>
+                Суббота
+                <div class="Menu_2">
+                    <div>Завтрак</div>
+                    <div>Обед</div>
+                    <div>Ужин</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
